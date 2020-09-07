@@ -1,0 +1,25 @@
+{
+  "name": "to-do_list",
+  "version": "1.0.0",
+  "description": "To-do list app built using MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "LoutFox",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
